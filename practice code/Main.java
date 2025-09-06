@@ -7,6 +7,7 @@ public class Main {
         System.out.print("enter your name :");
         String name = src.nextLine();
         System.out.println("my name is " + name);
+        src.close();
     }
 
 }

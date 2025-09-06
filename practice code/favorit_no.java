@@ -6,7 +6,7 @@ public static void main(String[] args ){
     System.out.print("Eneter your favorit number :");
     int num = src.nextInt();
     System.out.println(num + " is my also favorit number .");
-
+    src.close();
 }
 
 
