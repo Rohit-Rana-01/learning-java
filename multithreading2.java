@@ -1,9 +1,10 @@
-public class multithreading extends Thread{
+public class multithreading2 implements Runnable{
+
     int tnumber ;
-    public  multithreading(int tnumber){
+    public  multithreading2(int tnumber){
         this.tnumber = tnumber ;
     }
-    @Override 
+    @Override
     public void run(){
         for(int i = 1 ; i < 5 ; i++){ 
             // if(tnumber == 3){
@@ -17,14 +18,16 @@ public class multithreading extends Thread{
             }
         }
     }
+
     public static void main(String[] args){
         for(int i = 1 ; i<=5 ; i++){
-            multithreading my = new multithreading(i) ;
-            my.start();
+            multithreading2 my = new multithreading2(i) ;
+            Thread hi = new Thread(my);
+            // my.start();
+            hi.start();
 
         }
    
     }
     
 }
-    
